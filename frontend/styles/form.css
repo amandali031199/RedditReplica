@@ -1,0 +1,260 @@
+/* General popup form */
+.form-popup {
+  display: none; /* initially hidden */
+  position: fixed;
+  top:50%; /*center of screen */
+  left:50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 4px;
+  font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*div which stops users from clicking on background when modal is open*/
+#disableDiv {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%; /*covers whole page*/
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+  z-index: 1;
+  display: none;
+}
+
+/* General form container*/
+.form-container {
+  max-width: 350px;
+  padding: 10px;
+  background-color: white;
+  border: 1px;
+  border-radius: 4px;
+  max-height: 600px;
+  overflow-y: auto;
+  overflow: auto;
+}
+
+/* Full-width input fields */
+.form-container .formbox{
+  width: 90%;
+  padding: 18px;
+  margin: 5px 0 15px 0;
+  border: 1px;
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/* When the inputs get focus */
+.form-container .formbox:focus{
+  background-color: #ddd;
+  outline: none;
+  width: 90%;
+}
+
+/*textbox for users to write comments in*/
+.commentbox {
+	display: inline-block; /*in line with comment button */
+	width: 74%;
+  padding: 7px;
+  margin: 5px 0 10px 0;
+  border: 1px;
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+/*when the comment box gets focus*/
+.commentbox:focus {
+  background-color: #ddd;
+  outline: none;
+  width:74%;
+}
+
+/* full width submit/close buttons for login/signup*/
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  border: 1px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  margin-top:10px;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  border: 1px;
+  margin-top:0px;
+}
+
+/* Post a comment button */
+.postComment {
+	display:inline-block;
+	background-color: var(--reddit-blue);
+  color: white;
+  padding: 7px 3px;
+  border: 1px;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom:10px;
+  margin-top:0px;
+  margin-left: 10px;
+  opacity: 0.8;
+  border-radius: 4px;
+
+}
+
+/* unfollow button */
+.unfollow {
+	display:inline-block; /*in line with follow button */
+  background-color: var(--reddit-blue);
+  color: white;
+  padding: 10px 5px;
+  border: 1px;
+  cursor: pointer;
+  width: 45%;
+  margin-bottom:10px;
+  margin-top:0px;
+  margin-left: 15px;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* follow button */
+.follow{
+  background-color: white;
+  color: var(--reddit-blue);
+  display:inline-block;
+  padding: 10px 5px;
+  border: 1px;
+  cursor: pointer;
+  width: 45%;
+  margin-bottom:10px;
+  margin-top:0px;
+  margin-left: 10px;
+  opacity: 0.8;
+  border-radius: 4px;
+  border: 1px solid var(--reddit-blue);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* editting profile button full width */
+.edit {
+  background-color: var(--reddit-blue);
+  color: white;
+  padding: 10px 10px;
+  border: 1px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  margin-top:10px;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+/* Add some hover effects to buttons  */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  border: 1px;
+}
+
+/* cross button on top of most pop ups */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+/*when you hover over the x button */
+.close:hover {
+  opacity: 1;
+}
+
+/*style of x before and after use */
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+
+/* style of x before */
+.close:before {
+  transform: rotate(45deg);
+}
+
+/*style of x after */
+.close:after {
+  transform: rotate(-45deg);
+}
+
+/* scroll style for infinite scroll */
+.ss-wrapper {
+  overflow : hidden;
+  height   : 100%;
+  position : relative;
+  z-index  : 1;
+  float: left;
+}
+
+.ss-content {
+  height          : 100%;
+  width           : 100%;
+  padding         : 0 32px 0 0;
+  position        : relative;
+  right           : -18px;
+  overflow        : auto;
+  -moz-box-sizing : border-box;
+  box-sizing      : border-box;
+}
+
+.ss-scroll {
+  position            : relative;
+  background          : rgba(0, 0, 0, .1);
+  width               : 9px;
+  border-radius       : 4px;
+  top                 : 0;
+  z-index             : 2;
+  cursor              : pointer;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+.ss-container:hover .ss-scroll {
+  opacity: 1;
+}
+
+.ss-grabbed {
+  user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+/* table layout on profile and user pages */
+td, th {
+  text-align: center;
+  padding: 8px;
+  padding-left: 10px;
+}
+
+.failAuth {
+  font-size: small;
+  text-align: center;
+}

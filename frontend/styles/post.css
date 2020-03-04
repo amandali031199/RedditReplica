@@ -1,0 +1,179 @@
+
+/*over post container style */
+.post {
+  display: flex;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: white;
+  border: 1px solid var(--reddit-grey);
+  border-radius: 4px;
+}
+
+/* Add some hover effects */
+.post:hover {
+  border: 1px solid var(--alt-text-color);
+}
+
+/*vote div on the left of post*/
+.post .vote {
+  width: 50px;
+  text-align: center;
+  background-color: var(--reddit-light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: small;
+}
+
+/*style of div if it was on user feed (same as public vote)*/
+.post .votepriv {
+  width: 50px;
+  text-align: center;
+  background-color: var(--reddit-light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: small;
+}
+
+/* style of the text "0 upvotes" */
+.post .votepara {
+  font-size: small;
+}
+
+/*when you hover over the text to show it's clickable */
+.post .votepara:hover {
+  color: var(--reddit-blue);
+}
+
+/* content div of post */
+.post .content {
+  padding: 10px;
+  width: 100%;
+}
+
+/* title header of post */
+.post-title {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+/* description section of post */
+.post-desc {
+	font-size: 12px;
+}
+
+/* author section of post */
+.post-author {
+  margin: 5px 0;
+  font-size: 12px;
+  display: inline;
+  color: var(--reddit-blue);
+}
+
+/* published time section of psot */
+.post-time {
+  margin: 5px 0;
+  font-size: 12px;
+  display: inline;
+  color: var(--reddit-blue);
+}
+
+/* subseddit section of psot */
+.post-subseddit {
+  margin: 5px 0;
+  font-size: 12px;
+  color: grey;
+  display: inline;
+}
+
+/* displays how many comments section of post */
+.post-comment {
+  margin: 5px 0;
+  font-size: 12px;
+  color: grey;
+}
+
+/*comment section for a logged in user (same as public)*/
+.post-comment-priv {
+  margin: 5px 0;
+  font-size: 12px;
+  color: grey;
+}
+
+/*shows that comments are clickable for logged in*/
+.post-comment-priv:hover {
+  text-decoration: underline;
+}
+
+/* any text that can be clickable to open a popup */
+.listAll:hover {
+  text-decoration: underline;
+}
+
+/* image style for post */
+.post-image {
+	max-width:100%;
+	max-height:100%;
+	width:100%;
+}
+
+/*comments speech bubble displayed in popup */
+.speech-bubble {
+	position: relative;
+	background: var(--reddit-light-grey);
+	border-radius: .4em;
+}
+
+/* style for comment speech bubble */
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-bottom-color: var(--reddit-light-grey);
+	border-top: 0;
+	border-right: 0;
+	margin-left: -7.5px;
+	margin-top: -15px;
+}
+
+/* italics tags */
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  height: 5px;
+  width: 5px;
+  left: 17px;
+  position: relative;
+
+}
+
+/* upvote button style */
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+
+}
+
+/* shows upvote button is clickable */
+.up:hover {
+	border: solid #4CAF50;
+	border-width: 0 3px 3px 0;
+}
+
+/* downvote button style */
+.down:hover {
+	border: solid red;
+	border-width: 0 3px 3px 0;
+}
+
+/*shows dowvote button is clickable */
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
