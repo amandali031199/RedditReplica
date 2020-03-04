@@ -8,5 +8,5 @@ Users are able to login, register, view a feed (public vs personalised when logg
 2. Open the terminal and switch to the folder Backend in the repository
 3. Run the command python3 backend_server.py
 4. Open a new tab in the terminal and switch to the Frontend folder in the repository
-5. Run the command python3 frontend_server.py
+5. Run the command python3 frontend_server.py <localhost address from backend>
 6. Run the host url and copy the username and password in the terminal into the website
