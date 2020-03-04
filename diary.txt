@@ -1,0 +1,36 @@
+DATE   | START   | STOP    | ACTIVITY                      | COMMENTS
+7/8/19 | 11:30pm | 1:22am  | coding + debug                | login level 0 + style
+8/8/19 | 1:22am  | 2:28am  | coding + debug                | sign up level 0 + authenticate + style
+8/8/19 | 2:28am  | 4:30am  | coding + debug                | level 0 (all complete)
+
+8/8/19 | 4:30am  | 6:00am  | API debug                     | post/public (wasn't getting the feed)
+8/8/19 | 11:00am | 12:00pm | API + autotest                | got post/public to work with fetch
+8/8/19 | 1:00pm  | 2:00pm  | testing                       | running autotest
+9/8/19 | 10:05am | 11:34am | coding + debug                | login level 1
+9/8/19 | 11:34am | 12:06pm | coding                        | user/feed
+9/8/19 | 12:06pm | 1:25pm  | debug API                     | user/feed
+9/8/19 | 1:25pm  | 2:21pm  | coding + debug                | sign up level 1 (all complete)
+
+9/8/19 | 10:12pm | 12:56am | coding + debug                | show upvotes level 2
+9/8/19 | 12:56pm | 2:14am  | coding + debug + css, speech  | show comments level 2
+9/8/19 | 2:14am  | 3:20am  | debug + css research          | fix modal/ pop-up interaction
+10/8/19| 9:45am  | 12:30am | coding + debug + css, table   | profile level 2
+10/8/19| 1:33pm  | 2:47pm  | coding + debug + css, arrow   | upvote level 2
+10/8/19| 2:47pm  | 3:20pm  | coding + debug                | live update for upvote level 3
+11/8/19| 8:30am  | 11:02am | coding + debug + research     | post: image file reader and base64
+11/8/19| 11:02am | 12:38pm | coding + debug                | post level 2
+
+11/8/19| 12:38pm | 1:41pm  | coding + debug + research     | infinite scroll level 3
+11/8/19| 5:30pm  | 7:09pm  | coding + debug                | comment + live update level 3
+11/8/19| 8:12pm  | 9:27pm  | coding + debug                | update/edit profile
+11/8/19| 9:27pm  | 10:33pm | debug                         | event.preventdefault(), fix email signup
+11/8/19| 10:33pm | 12:42am | coding + debug                | user pages level 3
+12/8/19| 12:42am | 1:00am  | debug                         | fixing the over-use of fetch
+12/8/19| 1:00am  | 3:14am  | coding + debug                | follow level 3
+12/8/19| 3:14am  | 3:56am  | coding + debug                | delete post level 3
+12/8/19| 3:56am  | 5:20am  | coding + debug                | update post level 3
+12/8/19| 5:20am  | 6:00am  | debug API                     | API using photos
+12/8/19| 9:30am  | 12:31pm | coding + debug                | search level 3 (all complete)
+12/8/19| 6:34pm  | 6:52pm  | debug + test                  | limiting types of photos + testing
+
+12/8/19| 7:30am  | 2:20pm  | test + coding                 | testing and cleaning up style 
