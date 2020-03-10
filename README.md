@@ -3,7 +3,7 @@ Frontend Project using JavaScript to create a Reddit look-a-like with the same i
 
 Users are able to login, register, view a feed (public vs personalised when logged in off who they are following), upvote, comment, post, view their own and others' profiles, update their own profile, follow other users, delete/update a post, and search for a particular post. Infinite scroll and live update of comments and upvotes have also been implemented. 
 
-## Instructions
+## Instructions (backend no longer connects as it is a course project)
 1. Download the Repository
 2. Open the terminal and switch to the folder Backend in the repository
 3. Run the command python3 backend_server.py
